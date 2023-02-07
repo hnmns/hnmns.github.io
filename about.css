@@ -1,3 +1,59 @@
+h1 {
+	color: #e06bb9;
+	font-size:24px;
+	font-weight:bold;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h2 {
-    color:#009999
+    color:#009999;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#h211 {
+    color:#009966 !important
+        /*overwrites inline css?*/
+}
+.h211 {
+    color: yellow;
+}
+h3 {
+	color: #17c22b;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 24px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.topbar a:hover {
+	background-color: #470ca5;
+	color: #efefe1;
+}
+.topbar a:active{
+	background-color: #a581de;
+	color: #000000;
+}
+
+.botbar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 15px;
+}
+
+form{
+	font-size:16px;
+	font-weight: bold;
+	width: 100%;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+	padding: 5%;
 }
