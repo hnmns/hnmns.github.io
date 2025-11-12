@@ -1,0 +1,12 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/prav"]
+	path = themes/prav
+	url = https://github.com/pravin/hugo-theme-prav.git
+[submodule "themes/dpsg"]
+	path = themes/dpsg
+	url = https://github.com/pfadfinder-konstanz/hugo-dpsg.git
+[submodule "themes/hugo-theme-prav"]
+	path = themes/hugo-theme-prav
+	url = https://github.com/pravin/hugo-theme-prav.git
