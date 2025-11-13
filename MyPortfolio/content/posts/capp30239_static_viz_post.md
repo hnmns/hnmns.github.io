@@ -8,7 +8,7 @@ A static data visualization project
 
 {{< figure
   src="/img/post_img/narrative_screenshot.png"
-  alt="A photograph of Zion National Park"
+  alt="CAPP30239 static-viz project"
   link="https://github.com/hnmns/Static-Visualization-Project.git"
   caption=""
   class="ma0 w-75"

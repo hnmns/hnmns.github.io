@@ -8,8 +8,14 @@ html, body, button, input, select, textarea, .pure-g [class *="pure-u"] {
     font-family: Bitter, Palatino, serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #999 url(/img/bg-dk.jpg);
+    display: flex;
+    flex-direction: column;
 }
 
 table, img {
@@ -78,6 +84,10 @@ table, img {
     margin: 1em 0;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 #sidebar .pure-menu-item a {
     /* color: #900; */
     color: var(--primary-color);
@@ -93,6 +103,10 @@ footer {
     font-style: italic;
     font-size: 0.8em;
     padding: 1em;
+}
+
+.footer {
+    flex-shrink: 0;
 }
 
 article, div.list {
@@ -184,7 +198,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.125em;
 }
 
 h2 {
