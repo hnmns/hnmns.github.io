@@ -18,7 +18,7 @@ pygmentsStyle = "perldoc"
   tagline = "maclunky"
   author = "Riley"
   authorImgPath = "/img/author.png"
-  authorBlurb = "It me"
+  authorBlurb = "My favorite sprite from my grandma's house."
 
 # If you do not want a social icon, just comment it out
 # Please update the example values!
@@ -27,8 +27,8 @@ pygmentsStyle = "perldoc"
   facebook = "https://www.facebook.com/example"
   twitter = "http://twitter.com/example"
   medium = "https://www.medium.com/@example"
-  github = "https://github.com/example"
-  linkedin = "http://uk.linkedin.com/in/example"
+  github = "https://github.com/hnmns"
+  linkedin = "https://www.linkedin.com/in/riley-kouns-6470aa193/"
   mastodon = "https://mstdn.social/example"
 
 

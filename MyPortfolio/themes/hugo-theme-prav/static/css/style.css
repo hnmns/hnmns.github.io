@@ -1,9 +1,21 @@
+:root {
+  --primary-color: #007a60;
+  --secondary-color: #da7ccc;
+  --text-color: #333;
+}
+
 html, body, button, input, select, textarea, .pure-g [class *="pure-u"] {
     font-family: Bitter, Palatino, serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background: #999 url(/img/bg-dk.jpg);
+    display: flex;
+    flex-direction: column;
 }
 
 table, img {
@@ -72,8 +84,14 @@ table, img {
     margin: 1em 0;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 #sidebar .pure-menu-item a {
-    color: #900;
+    /* color: #900; */
+    color: var(--primary-color);
+    
 }
 
 #sidebar .pure-menu-item a small {
@@ -85,6 +103,10 @@ footer {
     font-style: italic;
     font-size: 0.8em;
     padding: 1em;
+}
+
+.footer {
+    flex-shrink: 0;
 }
 
 article, div.list {
@@ -154,7 +176,8 @@ section.toc h3 {
     color: #fff;
     border-radius: 16px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background-color: #900;
+    /* background-color: #900; */
+    background-color: var(--primary-color)
 }
 
 
@@ -175,7 +198,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.125em;
 }
 
 h2 {
@@ -202,7 +225,8 @@ h3 {
 }
 
 a {
-    color: #900;
+    /* color: #900; */
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -213,7 +237,8 @@ a {
 }
 
 .sc:hover {
-    color: #900;
+    /* color: #900; */
+    color: var(--primary-color);
     -webkit-transform: rotate(11deg);
     transform: scale(1.2);
 }
