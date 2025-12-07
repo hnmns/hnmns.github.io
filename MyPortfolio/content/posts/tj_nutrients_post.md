@@ -4,6 +4,14 @@ draft = false
 title = "TJ's Nutrients-per-dollar Investigation"
 +++
 
-## Inciting Incident
+My excuse to try out Streamlit before a relevant interview with City of Seattle's OLS (and to minmax my shopping). [Here](https://github.com/cmoog/traderjoes) is where I first found out about the TJ's product info API.
 
-Here is where I first found out about it [link one guy's github].
+
+{{< figure
+  src="/img/post_img/tj_calorie_per_dollar.png"
+  alt="TJ nutrient investigation"
+  link="https://github.com/hnmns/tallying-joules"
+  caption=""
+  class="ma0 w-75"
+  width=500
+>}}

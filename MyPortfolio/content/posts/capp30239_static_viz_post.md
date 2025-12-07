@@ -4,7 +4,7 @@ draft = false
 title = 'Native American gaming and reservation wealth'
 +++
 
-A static data visualization project
+A static data visualization project. Click the images to go to the repo! If you dare...
 
 {{< figure
   src="/img/post_img/narrative_screenshot.png"
