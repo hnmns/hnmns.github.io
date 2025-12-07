@@ -15,7 +15,7 @@ pygmentsStyle = "perldoc"
 # Please update!
 [params]
   title = "The Riley Zone"
-  tagline = "maclunky"
+  tagline = ""
   author = "Riley"
   authorImgPath = "/img/author.png"
   authorBlurb = "My favorite sprite from my grandma's house."
@@ -38,3 +38,7 @@ pygmentsStyle = "perldoc"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
