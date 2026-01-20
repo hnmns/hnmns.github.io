@@ -8,14 +8,29 @@
         <managingEditor>Riley</managingEditor>
         <webMaster>Riley</webMaster>
         <copyright></copyright>
-        <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+            <item>
+                <title>Visualizing Great Lakes iron ore shipping</title>
+                <link>http://localhost:1313/posts/capp30239_dynamic_viz_post/</link>
+                <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+                <author>Riley</author>
+                <guid>http://localhost:1313/posts/capp30239_dynamic_viz_post/</guid>
+                <description>&lt;p&gt;An &lt;strong&gt;interactive&lt;/strong&gt; data visualization project. Click the image to head to my first crack at a &amp;ldquo;scrollytelling&amp;rdquo; article. Apparently,&lt;/p&gt;
+&lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://hnmns.github.io/Interactive-Visualization-Project/&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/interactive_project_screenshot.png&#34;
+    alt=&#34;CAPP30239 interactive viz project&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+ --&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: MapLibre, D3, Scrollama&lt;/p&gt;
+&lt;p&gt;When I interned with the &lt;a href=&#34;https://gsgp.org/&#34;&gt;Great Lakes Governors and Premiers&lt;/a&gt;, I got my first glimpse at the scale and importance of the Great Lakes Maritime Transportation System (MTS). Hoping to grapple with the realization that nearly all US domestically produced iron comes from a pretty concentrated corner of the country, I learned as I went. From start to finish of preparing this article, I picked up some valuable bits and pieces such as what data the US Army Corps of Engineers actually discloses on maritime cargoes; ; and the aforementioned technical tools for mapping and animation.&lt;/p&gt;</description>
+            </item>
+        
             <item>
                 <title>Native American gaming and reservation wealth</title>
                 <link>http://localhost:1313/posts/capp30239_static_viz_post/</link>
                 <pubDate>Wed, 12 Nov 2025 13:57:26 -0600</pubDate>
                 <author>Riley</author>
                 <guid>http://localhost:1313/posts/capp30239_static_viz_post/</guid>
-                <description>&lt;p&gt;A static data visualization project. Click the images to go to the repo! If you dare&amp;hellip;&lt;/p&gt;
+                <description>&lt;p&gt;A &lt;strong&gt;static&lt;/strong&gt; data visualization project. Click the image to head to the repo.&lt;/p&gt;
 &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/Static-Visualization-Project.git&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/narrative_screenshot.png&#34;
     alt=&#34;CAPP30239 static-viz project&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;/figure&gt;

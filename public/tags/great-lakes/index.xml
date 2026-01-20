@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>The Riley Zone</title>
+        <link>http://localhost:1313/tags/great-lakes/</link>
+        <description>Recent content in Great Lakes on The Riley Zone</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-gb</language>
+        <managingEditor>Riley</managingEditor>
+        <webMaster>Riley</webMaster>
+        <copyright></copyright>
+        <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/great-lakes/index.xml" rel="self" type="application/rss+xml" />
+            <item>
+                <title>Great Lakes iron ore shipping</title>
+                <link>http://localhost:1313/posts/capp30239_dynamic_viz_post/</link>
+                <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+                <author>Riley</author>
+                <guid>http://localhost:1313/posts/capp30239_dynamic_viz_post/</guid>
+                <description>&lt;p&gt;An &lt;strong&gt;interactive&lt;/strong&gt; data visualization project. Click the image to head to my first crack at a &amp;ldquo;scrollytelling&amp;rdquo; article.&lt;/p&gt;
+&lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://hnmns.github.io/Interactive-Visualization-Project/&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/interactive_project_screenshot.png&#34;
+    alt=&#34;CAPP30239 interactive viz project&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
+&lt;/figure&gt;
+ --&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: MapLibre, D3, Scrollama&lt;/p&gt;
+&lt;p&gt;When I interned with the &lt;a href=&#34;https://gsgp.org/&#34;&gt;Great Lakes Governors and Premiers&lt;/a&gt;, I got my first glimpse at the scale and importance of the Great Lakes Maritime Transportation System (MTS). Hoping to grapple with the realization that nearly all US domestically produced iron comes from a pretty concentrated corner of the country, I learned as I went. From start to finish of preparing this article, I picked up some valuable bits and pieces such as what data the US Army Corps of Engineers actually discloses on maritime cargoes; ; and the aforementioned technical tools for mapping and animation.&lt;/p&gt;</description>
+            </item>
+        
+    </channel>
+</rss>

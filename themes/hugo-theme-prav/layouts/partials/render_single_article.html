@@ -1,20 +1,83 @@
-{{ if or (.Date) (ne .Params.Kind "page") }}
-<div class="date">
-    <time pubdate="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-    <span class="author">by {{ .Params.author | default .Site.Params.author }}</span>
-</div>
+{{/* By default, Single page */}}
+{{ $page := . }}
+{{ $isMain := false }}
+
+{{/* Was Context Dictionary `Ctx` passed? */}}
+{{ if reflect.IsMap . }}
+    {{ $page = .Ctx }}
+    {{ $isMain = .IsMainPage }}
 {{ end }}
-<article>
-    {{ if eq (.Scratch.Get "isMainPage") "true"  -}}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    {{ else -}}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    {{- end -}}
-    <div class="tags">
-        {{ range .Params.tags }}
-        {{ $name := . }}
-        <a href="/tags/{{ $name | urlize }}" class="pure-button">{{ $name }}</a>
-        {{ end }}
+
+{{/* Render content using $page */}}
+{{ with $page }}
+    {{ if or (.Date) (ne .Params.Kind "page") }}
+    <div class="date">
+        <time pubdate="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        <span class="author">by {{ .Params.author | default .Site.Params.author }}</span>
     </div>
-    {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
-</article>
+    {{ end }}
+    
+    <article class="article-summary">
+
+        {{ if and $isMain .Params.featured_image }}
+
+            <div class="article-grid">
+
+                <div class="article-image">
+                    <div class="container-hover">
+                        <a href="{{ .Params.featured_image_link | default .Title }}">
+                            <img
+                                src="{{ .Params.featured_image }}"
+                                alt="{{ .Params.featured_image_alt | default .Title }}"
+                                loading="lazy"
+                            >
+                            <div class="overlay overlay-left">
+                                <p class="overlay-text">{{ .Params.featured_image_hover}}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article-content">
+
+                    <h2>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+
+                    <div class="tags">
+                        {{ range .Params.tags }}
+                            <a href="/tags/{{ . | urlize }}" class="pure-button">{{ . }}</a>
+                        {{ end }}
+                    </div>
+
+                    {{ .Summary }}
+
+                </div>
+
+            </div>
+
+            
+            <div style="align-content: end; align-items: end; text-align: right;">
+                <a href="{{ .Permalink }}">Read More</a>
+            </div>
+
+        {{ else }}
+
+            {{ if $isMain -}}
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ else -}}
+                <h1>{{ .Title }}</h1>
+            {{- end }}
+
+            <div class="tags">
+                {{ range .Params.tags }}
+                    <a href="/tags/{{ . | urlize }}" class="pure-button">{{ . }}</a>
+                {{ end }}
+            </div>
+
+            {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
+
+        {{ end }}
+
+    </article>
+{{ end }}

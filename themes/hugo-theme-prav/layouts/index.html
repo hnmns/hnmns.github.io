@@ -4,20 +4,22 @@
 
 <div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
     <h1 style="text-align: center; margin: 0;">
-        Recent Posts (page {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }})
+        Recent Posts
+        <!-- (page {{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}) -->
     </h1>
 
     {{ range .Paginator.Pages }}
 
     {{ .Scratch.Set "isMainPage" "true" }}
     <div class="pad">
-        {{- partial "render_single_article.html" . -}}
+        <!-- {{- partial "render_single_article.html" . -}} -->
+        {{ partial "render_single_article.html" (dict "Ctx" . "IsMainPage" true) }}
     </div>
-    <div class="pad"></div>
+    <!-- <div class="pad"></div> -->
 
     {{ end }}
 
-    <div class="pagination">
+    <!-- <div class="pagination">
         {{ if $paginator.HasNext }}
         <a class="pure-button pagination-item older" href="{{ $paginator.Next.URL }}">Older</a>
         {{ else }}
@@ -29,6 +31,6 @@
         {{ else }}
         <span class="pagination-item newer">Newer</span>
         {{ end }}
-    </div>
+    </div> -->
 </div>
 {{ end }}
