@@ -19,6 +19,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.148.0">
+    <meta name="keywords" content="Data viz,Personal">
 
     
     
@@ -38,7 +39,11 @@
 
     
 </head><body>
-        <div class="container"><div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
+
+    
+    <div id="navbar-wrapper">
+        <div class="container">
+            <div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
     <a href="/" class="pure-menu-heading">
         
         The Riley Zone
@@ -48,7 +53,7 @@
         <li class="pure-menu-item">
             <a href="/posts" class="pure-menu-link">
                 <i class="fa fa-archive"></i>
-                Articles
+                Posts
             </a>
         </li>
         
@@ -89,11 +94,17 @@
         
         
     </ul>
+
 </div>
-<div class="pure-u-1">
-    <div class="pad">
+<div class="pad"></div>
+
+        </div>
     </div>
-</div><div class="pure-g">
+
+    
+    <div class="container">
+        <div class="pure-g">
+            
 
 
 <div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
@@ -113,23 +124,72 @@
 
 
     
+        
+        <nav class="post-back">
+            <a href="/posts" aria-label="Back to posts">
+                ← Back
+            </a>
+        </nav>
+        
+    
+    
     <div class="date">
         <time pubdate="2025-07-10">July 10, 2025</time>
         <span class="author">by Riley</span>
     </div>
     
     
-    <article>
-        
-        <h1><a href="http://localhost:1313/posts/tj_nutrients_post/">TJ&#39;s Nutrients-per-dollar Investigation</a></h1><div class="tags">
-            
-        </div>
+    <article class="article-summary">
 
-        <p>My excuse to try out Streamlit before a relevant interview with City of Seattle&rsquo;s OLS (and to minmax my shopping). <a href="https://github.com/cmoog/traderjoes">Here</a> is where I first found out about the TJ&rsquo;s product info API.</p>
-<figure class="ma0 w-75"><a href="https://github.com/hnmns/tallying-joules"><img src="/img/post_img/tj_calorie_per_dollar.png"
+        
+
+            
+            <h1>TJ&#39;s Nutrients-per-dollar Investigation</h1>
+
+            
+                <div class="article-grid">
+                    <div class="article-image">
+                        <div class="container-hover">
+                            <a href="">
+                                <img
+                                    src="/img/post_img/tj_calorie_per_dollar.png"
+                                    alt=""
+                                    loading="lazy"
+                                >
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="tags">
+                    
+                        <a href="/tags/data-viz" class="pure-button">Data viz</a>
+                    
+                        <a href="/tags/personal" class="pure-button">Personal</a>
+                    
+                </div>
+
+            <p>Exploring nutrition facts and prices at a certain grocery chain. My excuse to try out Streamlit so I can say that I&rsquo;ve used it (and because it&rsquo;s helpful [and to min-max my grocery shopping]).</p>
+<p><strong>Tools used</strong>: Streamlit, Polars, Vega-Altair, GraphQL</p>
+<hr>
+<h3 id="the-impetus">The Impetus</h3>
+<p>Paul Prudhomme wanted us to know that</p>
+<blockquote>
+<p>&ldquo;You don&rsquo;t need a silver fork to eat good food.&rdquo;</p></blockquote>
+<p>I tend to agree, and in the spirit of <a href="https://www.historyofinformation.com/detail.php?id=3439">offloading more cognitive functions to the technology of the day</a>, I wanted to make a tool to figure out which grocery items nourish well by the dollar. By &ldquo;nourish,&rdquo; I really just mean &ldquo;be high in calories and protein&rdquo; (for my own purposes).</p>
+<p><a href="https://github.com/cmoog/traderjoes">Here</a> is where I first found out about the TJ&rsquo;s product info API that I used.</p>
+<h3 id="the-findings">The Findings</h3>
+<p>Some preliminary findings include that, to no surprise, oil-laden foods like cooking oil and peanut butter give you quite a few calories for your dollar. Flour was also up there.</p>
+<p>Annoyingly, there were many instances of individually wrapped and boxed items (e.g. snack bars) whose data were entered in terms of the full box quantity <em>except</em> for the price. This made for a bunch of high-value red herrings. I may have to come back to this project with some sort of outlier detection model.</p>
+<p>I am considering ways to make the Streamlit app quickly accessible and actually useful for a consumer. Something more in the vein of &ldquo;enter a product name, get a Yes/No result on whether it&rsquo;s a value purchase.&rdquo; I would love for my work stay out of the dreaded Data Dashboard Graveyard, where well-intentioned &ldquo;data tools&rdquo; never earn the attention of real-life human beings.</p>
+<!-- <figure class="ma0 w-75"><a href="https://github.com/hnmns/tallying-joules"><img src="/img/post_img/tj_calorie_per_dollar.png"
     alt="TJ nutrient investigation" width="500"></a>
 </figure>
+ -->
 
+        
 
     </article>
 
@@ -139,19 +199,23 @@
 </div>
 
 
+            
                 
+                    
 <div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
     <div class="pad">
 
         
         <h3>Welcome</h3>
         <div style="text-align: center;">
-            <img
-                src="/img/author.png" 
-                alt="Riley" 
-                class="pure-img"
-                width="100em">
-            </img>
+            <a href="/about">
+                <img
+                    src="/img/author.png" 
+                    alt="Riley" 
+                    class="pure-img"
+                    width="100em">
+                </img>
+            </a>
             <p><em>Thank you for visiting The Riley Zone. Please enjoy some of my work.</em></p>
         </div>
 
@@ -160,7 +224,10 @@
     </div> 
 </div> 
                 
-            </div><div class="pure-g">
+            
+        </div>
+
+        <div class="pure-g">
     <footer class="pure-u-1 pure-u-md-1 pure-u-sm-1">
         
         <p>Adapted from <a href="https://github.com/pravin/hugo-theme-prav">Prav theme</a> by <a href="https://cto.me.uk">Pravin
@@ -170,5 +237,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js"
         integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C"
         crossorigin="anonymous"></script>
-</div></div></body>
+</div>
+    </div>
+
+    
+
+</body>
 </html>

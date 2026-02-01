@@ -2,7 +2,7 @@
 <html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="theme-color" content="#000" />
-    <title>Visualizing Great Lakes iron ore shipping &middot; The Riley Zone</title>
+    <title>Great Lakes Governors &amp; Premiers internship &middot; The Riley Zone</title>
 
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
@@ -19,7 +19,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.148.0">
-    <meta name="keywords" content="Data viz,Writing">
+    <meta name="keywords" content="Policy analysis,Data viz,Writing">
 
     
     
@@ -31,7 +31,7 @@
     <meta property="og:image" content="http://localhost:1313/img/author.png">
     <meta name="author" content="Riley">
 
-    <meta property="og:title" content="Visualizing Great Lakes iron ore shipping">
+    <meta property="og:title" content="Great Lakes Governors &amp; Premiers internship">
     
 
     <!-- Any custom header goes here-->
@@ -134,7 +134,7 @@
     
     
     <div class="date">
-        <time pubdate="2026-01-04">January 4, 2026</time>
+        <time pubdate="2025-09-01">September 1, 2025</time>
         <span class="author">by Riley</span>
     </div>
     
@@ -144,7 +144,7 @@
         
 
             
-            <h1>Visualizing Great Lakes iron ore shipping</h1>
+            <h1>Great Lakes Governors &amp; Premiers internship</h1>
 
             
                 <div class="article-grid">
@@ -152,7 +152,7 @@
                         <div class="container-hover">
                             <a href="">
                                 <img
-                                    src="/img/post_img/interactive_project_screenshot.png"
+                                    src="/img/post_img/gsgp_internship_screencap.png"
                                     alt=""
                                     loading="lazy"
                                 >
@@ -165,23 +165,32 @@
 
                 <div class="tags">
                     
+                        <a href="/tags/policy-analysis" class="pure-button">Policy analysis</a>
+                    
                         <a href="/tags/data-viz" class="pure-button">Data viz</a>
                     
                         <a href="/tags/writing" class="pure-button">Writing</a>
                     
                 </div>
 
-            <p>An <strong>interactive</strong> data visualization project. Click the image to head to my first crack at a &ldquo;scrollytelling&rdquo; article. Apparently, most of the USA&rsquo;s iron and steel comes out of the Great Lakes region.</p>
-<!-- <figure class="ma0 w-75"><a href="https://hnmns.github.io/Interactive-Visualization-Project/"><img src="/img/post_img/interactive_project_screenshot.png"
-    alt="CAPP30239 interactive viz project" width="500"></a>
-</figure>
- -->
-<p><strong>Tools used</strong>: MapLibre, D3, Scrollama</p>
+            <p>I interned with the <a href="https://gsgp.org/">GSGP</a> as a geospatial analyst. My task was to find how greenhouse gas (GHG) emissions from maritime transportation were distributed across state and provincial borders. Turns out, Great Lakes maritime transportation accounts for a pretty small fraction of regional GHG emissions.</p>
+<p><strong>Tools used</strong>: QGIS, Excel, ArcGIS Experience Builder</p>
 <hr>
-<h3 id="what-i-learned">What I Learned</h3>
-<p>When I <a href="/posts/gsgp_internship_post">interned with the Great Lakes Governors and Premiers</a>, I got my first glimpse at the scale and importance of the Great Lakes Maritime Transportation System (MTS). I really did have trouble believing that nearly all US domestically produced iron comes from a pretty concentrated corner of the country. From the start to the finish of preparing this article, I picked up some valuable bits and pieces, such as what data the US Army Corps of Engineers actually discloses on maritime cargoes</p>
-<p>On the computer-technical side, I got to try my hand at mapping and animation in a web article. For being a &ldquo;data visualization&rdquo; project, I did not get to showcase a ton of data (not an excuse, but national security got in the way of my original plan), but I <em>did</em> get to showcase the narrative that I roughly had in mind, which is still a victory on its own. Despite the limited data, I think I was just starting to build the storied <em><strong>intuition</strong></em> on D3 from what I did get to visualize. That included animating a real ship route from Duluth-Superior to Gary as the article played out.</p>
-<p>Beware: Once in a great while, I will open the project and the interactive elements will simply not trigger until I refresh the page. I am still unsure what exactly is going on there, but just know that it is solved with an <code>F5</code>.</p>
+<p><em>Check out my full report below for all of the technical details.</em></p>
+<h3 id="what-i-learned">What I learned</h3>
+<p>This internship was a good exercise in policy writing and seeing a project through from start to finish. I enjoyed the opportunity to present my work to GSGP&rsquo;s Maritime Steering Committee, comprising state and provincial transportation department personnel.</p>
+<p>As much as I would love to just code all day, those charts and results have to be made communicable to an audience at some point. Apart from maybe researching the different federal and state/provincial GHG reporting standards, the most difficult part of this project was extracting policy recommendations that steer clear of politics, align with GSGP&rsquo;s Regional Maritime Strategy, and are clearly supported by my technical findings. Not only was forming the substance of my argument an exercise, but also the particular register necessary for clear policy writing. It really stuck with me when my supervisor explained the trick of preferring antecedents over pronouns whenever possible. For example, it is preferrable to restate a subject <em>by name</em> across sentences rather than calling it &ldquo;it,&rdquo; even though that might sound clunky. The intended audience of policy writing probably won&rsquo;t be taking a highlighter to your literary techniques, anyway.</p>
+<p>My supervisor was very cool and helpful about structuring the internship clearly, outlining it in terms of a few working papers. I wrote the working papers in sequence, each with a thesis that made sense in isolation, but that I would later synthesize into the full white paper. I&rsquo;m always chuffed to see a prodigious (to me) page count on a report after it all comes together. It&rsquo;s amazing how quickly a tall task becomes tractable when you take the time to break it down.</p>
+<p>Getting to present my findings to real transportation department representatives was pretty neat. I fielded questions afterward and got some practice tailoring my responses in real time, obviously not knowing ahead of time which topics would be most confusing for those unacquainted with the project.</p>
+<h3 id="the-report">The Report</h3>
+<iframe
+  src="./GLSLS Maritime Emissions - Final Report.pdf"
+  width="75%"
+  height="600px"
+  style="border: none; margin: auto; display: block;"
+></iframe>
+<h3 id="the-dashboard">The Dashboard</h3>
+<p>You can find the Experience Builder dashboard <a href="https://uchicago.maps.arcgis.com/home/item.html?id=7878b93f89a64f68b02b680a03d646fa#overview">here</a>. It is pretty minimal, but to be perfectly fair, it was all that the task at hand really called for.</p>
 
         
 

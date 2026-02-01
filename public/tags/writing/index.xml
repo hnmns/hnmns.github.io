@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>The Riley Zone</title>
-        <link>http://localhost:1313/posts/</link>
-        <description>Recent content in Posts on The Riley Zone</description>
+        <link>http://localhost:1313/tags/writing/</link>
+        <description>Recent content in Writing on The Riley Zone</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-gb</language>
         <managingEditor>Riley</managingEditor>
         <webMaster>Riley</webMaster>
         <copyright></copyright>
-        <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/writing/index.xml" rel="self" type="application/rss+xml" />
             <item>
                 <title>Visualizing Great Lakes iron ore shipping</title>
                 <link>http://localhost:1313/posts/capp30239_dynamic_viz_post/</link>
@@ -78,31 +78,6 @@
 &gt;&lt;/iframe&gt;
 &lt;h3 id=&#34;the-dashboard&#34;&gt;The Dashboard&lt;/h3&gt;
 &lt;p&gt;You can find the Experience Builder dashboard &lt;a href=&#34;https://uchicago.maps.arcgis.com/home/item.html?id=7878b93f89a64f68b02b680a03d646fa#overview&#34;&gt;here&lt;/a&gt;. It is pretty minimal, but to be perfectly fair, it was all that the task at hand really called for.&lt;/p&gt;</description>
-            </item>
-        
-            <item>
-                <title>TJ&#39;s Nutrients-per-dollar Investigation</title>
-                <link>http://localhost:1313/posts/tj_nutrients_post/</link>
-                <pubDate>Thu, 10 Jul 2025 00:46:36 -0500</pubDate>
-                <author>Riley</author>
-                <guid>http://localhost:1313/posts/tj_nutrients_post/</guid>
-                <description>&lt;p&gt;Exploring nutrition facts and prices at a certain grocery chain. My excuse to try out Streamlit so I can say that I&amp;rsquo;ve used it (and because it&amp;rsquo;s helpful [and to min-max my grocery shopping]).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: Streamlit, Polars, Vega-Altair, GraphQL&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;the-impetus&#34;&gt;The Impetus&lt;/h3&gt;
-&lt;p&gt;Paul Prudhomme wanted us to know that&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;You don&amp;rsquo;t need a silver fork to eat good food.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;I tend to agree, and in the spirit of &lt;a href=&#34;https://www.historyofinformation.com/detail.php?id=3439&#34;&gt;offloading more cognitive functions to the technology of the day&lt;/a&gt;, I wanted to make a tool to figure out which grocery items nourish well by the dollar. By &amp;ldquo;nourish,&amp;rdquo; I really just mean &amp;ldquo;be high in calories and protein&amp;rdquo; (for my own purposes).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/cmoog/traderjoes&#34;&gt;Here&lt;/a&gt; is where I first found out about the TJ&amp;rsquo;s product info API that I used.&lt;/p&gt;
-&lt;h3 id=&#34;the-findings&#34;&gt;The Findings&lt;/h3&gt;
-&lt;p&gt;Some preliminary findings include that, to no surprise, oil-laden foods like cooking oil and peanut butter give you quite a few calories for your dollar. Flour was also up there.&lt;/p&gt;
-&lt;p&gt;Annoyingly, there were many instances of individually wrapped and boxed items (e.g. snack bars) whose data were entered in terms of the full box quantity &lt;em&gt;except&lt;/em&gt; for the price. This made for a bunch of high-value red herrings. I may have to come back to this project with some sort of outlier detection model.&lt;/p&gt;
-&lt;p&gt;I am considering ways to make the Streamlit app quickly accessible and actually useful for a consumer. Something more in the vein of &amp;ldquo;enter a product name, get a Yes/No result on whether it&amp;rsquo;s a value purchase.&amp;rdquo; I would love for my work stay out of the dreaded Data Dashboard Graveyard, where well-intentioned &amp;ldquo;data tools&amp;rdquo; never earn the attention of real-life human beings.&lt;/p&gt;
-&lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/tallying-joules&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/tj_calorie_per_dollar.png&#34;
-    alt=&#34;TJ nutrient investigation&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
-&lt;/figure&gt;
- --&gt;</description>
             </item>
         
     </channel>

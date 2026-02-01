@@ -19,6 +19,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.148.0">
+    <meta name="keywords" content="Data viz,Writing">
 
     
     
@@ -38,7 +39,11 @@
 
     
 </head><body>
-        <div class="container"><div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
+
+    
+    <div id="navbar-wrapper">
+        <div class="container">
+            <div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable">
     <a href="/" class="pure-menu-heading">
         
         The Riley Zone
@@ -48,7 +53,7 @@
         <li class="pure-menu-item">
             <a href="/posts" class="pure-menu-link">
                 <i class="fa fa-archive"></i>
-                Articles
+                Posts
             </a>
         </li>
         
@@ -89,11 +94,17 @@
         
         
     </ul>
+
 </div>
-<div class="pure-u-1">
-    <div class="pad">
+<div class="pad"></div>
+
+        </div>
     </div>
-</div><div class="pure-g">
+
+    
+    <div class="container">
+        <div class="pure-g">
+            
 
 
 <div id="content" class="pure-u-1 pure-u-md-3-4 pure-u-sm-1">
@@ -113,23 +124,73 @@
 
 
     
+        
+        <nav class="post-back">
+            <a href="/posts" aria-label="Back to posts">
+                ← Back
+            </a>
+        </nav>
+        
+    
+    
     <div class="date">
         <time pubdate="2025-11-12">November 12, 2025</time>
         <span class="author">by Riley</span>
     </div>
     
     
-    <article>
-        
-        <h1><a href="http://localhost:1313/posts/capp30239_static_viz_post/">Native American gaming and reservation wealth</a></h1><div class="tags">
-            
-        </div>
+    <article class="article-summary">
 
-        <p>A <strong>static</strong> data visualization project. Click the image to head to the repo.</p>
-<figure class="ma0 w-75"><a href="https://github.com/hnmns/Static-Visualization-Project.git"><img src="/img/post_img/narrative_screenshot.png"
+        
+
+            
+            <h1>Native American gaming and reservation wealth</h1>
+
+            
+                <div class="article-grid">
+                    <div class="article-image">
+                        <div class="container-hover">
+                            <a href="">
+                                <img
+                                    src="/img/post_img/narrative_screenshot.png"
+                                    alt=""
+                                    loading="lazy"
+                                >
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="tags">
+                    
+                        <a href="/tags/data-viz" class="pure-button">Data viz</a>
+                    
+                        <a href="/tags/writing" class="pure-button">Writing</a>
+                    
+                </div>
+
+            <p>A <strong>static</strong> data visualization project. I&rsquo;ve heard no shortage of opinions about casinos and Indian Country in my lifetime, mostly indignant or condescending. This is my broad overview of the alleged relationship between tribal gaming ownership and economic outcomes, investigated through charts.</p>
+<!-- <figure class="ma0 w-75"><a href="https://github.com/hnmns/Static-Visualization-Project.git"><img src="/img/post_img/narrative_screenshot.png"
     alt="CAPP30239 static-viz project" width="500"></a>
 </figure>
+ -->
+<p><strong>Tools used</strong>: Vega-Altair, Camelot</p>
+<hr>
+<h3 id="my-methods">My Methods</h3>
+<p>The National Indian Gaming Commission registers all tribally owned gaming facilities and reports them in a PDF. I converted the jagged PDF to a CSV and tallied up the number of unique gaming facilities owned by each nation. Tribal gaming revenues belong solely to the nations themselves, so the numbers and types of facilities were probably the next best proxy measurement for revenues.</p>
+<p>An exploratory data analysis by charts is already such a far cry from a randomized experiment, so I couldn&rsquo;t fret too much about demonstrating a profound connection between gaming revenue and economic outcomes. All I really could hope to accomplish was showing that it is not, in fact, obvious that a casino or two is all it takes to lift a community out of hardship. This is not a very exciting or groundbreaking conclusion, but I still think it is important to give attention to the state of Native American and reservation populations.</p>
+<!-- [Download the full report (PDF)](native-gaming-narrative-singlepage.pdf) -->
+<h3 id="data-narrative-report">Data Narrative Report</h3>
+<iframe
+  src="./native-gaming-narrative-singlepage.pdf"
+  width="100%"
+  height="600px"
+  style="border: none;"
+></iframe>
 
+        
 
     </article>
 
@@ -139,19 +200,23 @@
 </div>
 
 
+            
                 
+                    
 <div id="sidebar" class="pure-u-1 pure-u-md-1-4 pure-u-sm-1">
     <div class="pad">
 
         
         <h3>Welcome</h3>
         <div style="text-align: center;">
-            <img
-                src="/img/author.png" 
-                alt="Riley" 
-                class="pure-img"
-                width="100em">
-            </img>
+            <a href="/about">
+                <img
+                    src="/img/author.png" 
+                    alt="Riley" 
+                    class="pure-img"
+                    width="100em">
+                </img>
+            </a>
             <p><em>Thank you for visiting The Riley Zone. Please enjoy some of my work.</em></p>
         </div>
 
@@ -160,7 +225,10 @@
     </div> 
 </div> 
                 
-            </div><div class="pure-g">
+            
+        </div>
+
+        <div class="pure-g">
     <footer class="pure-u-1 pure-u-md-1 pure-u-sm-1">
         
         <p>Adapted from <a href="https://github.com/pravin/hugo-theme-prav">Prav theme</a> by <a href="https://cto.me.uk">Pravin
@@ -170,5 +238,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js"
         integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C"
         crossorigin="anonymous"></script>
-</div></div></body>
+</div>
+    </div>
+
+    
+
+</body>
 </html>

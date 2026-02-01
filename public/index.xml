@@ -15,13 +15,17 @@
                 <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
                 <author>Riley</author>
                 <guid>http://localhost:1313/posts/capp30239_dynamic_viz_post/</guid>
-                <description>&lt;p&gt;An &lt;strong&gt;interactive&lt;/strong&gt; data visualization project. Click the image to head to my first crack at a &amp;ldquo;scrollytelling&amp;rdquo; article. Apparently,&lt;/p&gt;
+                <description>&lt;p&gt;An &lt;strong&gt;interactive&lt;/strong&gt; data visualization project. Click the image to head to my first crack at a &amp;ldquo;scrollytelling&amp;rdquo; article. Apparently, most of the USA&amp;rsquo;s iron and steel comes out of the Great Lakes region.&lt;/p&gt;
 &lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://hnmns.github.io/Interactive-Visualization-Project/&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/interactive_project_screenshot.png&#34;
     alt=&#34;CAPP30239 interactive viz project&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;/figure&gt;
  --&gt;
 &lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: MapLibre, D3, Scrollama&lt;/p&gt;
-&lt;p&gt;When I interned with the &lt;a href=&#34;https://gsgp.org/&#34;&gt;Great Lakes Governors and Premiers&lt;/a&gt;, I got my first glimpse at the scale and importance of the Great Lakes Maritime Transportation System (MTS). Hoping to grapple with the realization that nearly all US domestically produced iron comes from a pretty concentrated corner of the country, I learned as I went. From start to finish of preparing this article, I picked up some valuable bits and pieces such as what data the US Army Corps of Engineers actually discloses on maritime cargoes; ; and the aforementioned technical tools for mapping and animation.&lt;/p&gt;</description>
+&lt;hr&gt;
+&lt;h3 id=&#34;what-i-learned&#34;&gt;What I Learned&lt;/h3&gt;
+&lt;p&gt;When I &lt;a href=&#34;http://localhost:1313/posts/gsgp_internship_post&#34;&gt;interned with the Great Lakes Governors and Premiers&lt;/a&gt;, I got my first glimpse at the scale and importance of the Great Lakes Maritime Transportation System (MTS). I really did have trouble believing that nearly all US domestically produced iron comes from a pretty concentrated corner of the country. From the start to the finish of preparing this article, I picked up some valuable bits and pieces, such as what data the US Army Corps of Engineers actually discloses on maritime cargoes&lt;/p&gt;
+&lt;p&gt;On the computer-technical side, I got to try my hand at mapping and animation in a web article. For being a &amp;ldquo;data visualization&amp;rdquo; project, I did not get to showcase a ton of data (not an excuse, but national security got in the way of my original plan), but I &lt;em&gt;did&lt;/em&gt; get to showcase the narrative that I roughly had in mind, which is still a victory on its own. Despite the limited data, I think I was just starting to build the storied &lt;em&gt;&lt;strong&gt;intuition&lt;/strong&gt;&lt;/em&gt; on D3 from what I did get to visualize. That included animating a real ship route from Duluth-Superior to Gary as the article played out.&lt;/p&gt;
+&lt;p&gt;Beware: Once in a great while, I will open the project and the interactive elements will simply not trigger until I refresh the page. I am still unsure what exactly is going on there, but just know that it is solved with an &lt;code&gt;F5&lt;/code&gt;.&lt;/p&gt;</description>
             </item>
         
             <item>
@@ -30,12 +34,50 @@
                 <pubDate>Wed, 12 Nov 2025 13:57:26 -0600</pubDate>
                 <author>Riley</author>
                 <guid>http://localhost:1313/posts/capp30239_static_viz_post/</guid>
-                <description>&lt;p&gt;A &lt;strong&gt;static&lt;/strong&gt; data visualization project. Click the image to head to the repo.&lt;/p&gt;
-&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/Static-Visualization-Project.git&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/narrative_screenshot.png&#34;
+                <description>&lt;p&gt;A &lt;strong&gt;static&lt;/strong&gt; data visualization project. I&amp;rsquo;ve heard no shortage of opinions about casinos and Indian Country in my lifetime, mostly indignant or condescending. This is my broad overview of the alleged relationship between tribal gaming ownership and economic outcomes, investigated through charts.&lt;/p&gt;
+&lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/Static-Visualization-Project.git&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/narrative_screenshot.png&#34;
     alt=&#34;CAPP30239 static-viz project&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;/figure&gt;
-
-</description>
+ --&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: Vega-Altair, Camelot&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;my-methods&#34;&gt;My Methods&lt;/h3&gt;
+&lt;p&gt;The National Indian Gaming Commission registers all tribally owned gaming facilities and reports them in a PDF. I converted the jagged PDF to a CSV and tallied up the number of unique gaming facilities owned by each nation. Tribal gaming revenues belong solely to the nations themselves, so the numbers and types of facilities were probably the next best proxy measurement for revenues.&lt;/p&gt;
+&lt;p&gt;An exploratory data analysis by charts is already such a far cry from a randomized experiment, so I couldn&amp;rsquo;t fret too much about demonstrating a profound connection between gaming revenue and economic outcomes. All I really could hope to accomplish was showing that it is not, in fact, obvious that a casino or two is all it takes to lift a community out of hardship. This is not a very exciting or groundbreaking conclusion, but I still think it is important to give attention to the state of Native American and reservation populations.&lt;/p&gt;
+&lt;!-- [Download the full report (PDF)](native-gaming-narrative-singlepage.pdf) --&gt;
+&lt;h3 id=&#34;data-narrative-report&#34;&gt;Data Narrative Report&lt;/h3&gt;
+&lt;iframe
+  src=&#34;./native-gaming-narrative-singlepage.pdf&#34;
+  width=&#34;100%&#34;
+  height=&#34;600px&#34;
+  style=&#34;border: none;&#34;
+&gt;&lt;/iframe&gt;</description>
+            </item>
+        
+            <item>
+                <title>Great Lakes Governors &amp; Premiers internship</title>
+                <link>http://localhost:1313/posts/gsgp_internship_post/</link>
+                <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+                <author>Riley</author>
+                <guid>http://localhost:1313/posts/gsgp_internship_post/</guid>
+                <description>&lt;p&gt;I interned with the &lt;a href=&#34;https://gsgp.org/&#34;&gt;GSGP&lt;/a&gt; as a geospatial analyst. My task was to find how greenhouse gas (GHG) emissions from maritime transportation were distributed across state and provincial borders. Turns out, Great Lakes maritime transportation accounts for a pretty small fraction of regional GHG emissions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: QGIS, Excel, ArcGIS Experience Builder&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Check out my full report below for all of the technical details.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-i-learned&#34;&gt;What I learned&lt;/h3&gt;
+&lt;p&gt;This internship was a good exercise in policy writing and seeing a project through from start to finish. I enjoyed the opportunity to present my work to GSGP&amp;rsquo;s Maritime Steering Committee, comprising state and provincial transportation department personnel.&lt;/p&gt;
+&lt;p&gt;As much as I would love to just code all day, those charts and results have to be made communicable to an audience at some point. Apart from maybe researching the different federal and state/provincial GHG reporting standards, the most difficult part of this project was extracting policy recommendations that steer clear of politics, align with GSGP&amp;rsquo;s Regional Maritime Strategy, and are clearly supported by my technical findings. Not only was forming the substance of my argument an exercise, but also the particular register necessary for clear policy writing. It really stuck with me when my supervisor explained the trick of preferring antecedents over pronouns whenever possible. For example, it is preferrable to restate a subject &lt;em&gt;by name&lt;/em&gt; across sentences rather than calling it &amp;ldquo;it,&amp;rdquo; even though that might sound clunky. The intended audience of policy writing probably won&amp;rsquo;t be taking a highlighter to your literary techniques, anyway.&lt;/p&gt;
+&lt;p&gt;My supervisor was very cool and helpful about structuring the internship clearly, outlining it in terms of a few working papers. I wrote the working papers in sequence, each with a thesis that made sense in isolation, but that I would later synthesize into the full white paper. I&amp;rsquo;m always chuffed to see a prodigious (to me) page count on a report after it all comes together. It&amp;rsquo;s amazing how quickly a tall task becomes tractable when you take the time to break it down.&lt;/p&gt;
+&lt;p&gt;Getting to present my findings to real transportation department representatives was pretty neat. I fielded questions afterward and got some practice tailoring my responses in real time, obviously not knowing ahead of time which topics would be most confusing for those unacquainted with the project.&lt;/p&gt;
+&lt;h3 id=&#34;the-report&#34;&gt;The Report&lt;/h3&gt;
+&lt;iframe
+  src=&#34;./GLSLS Maritime Emissions - Final Report.pdf&#34;
+  width=&#34;75%&#34;
+  height=&#34;600px&#34;
+  style=&#34;border: none; margin: auto; display: block;&#34;
+&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;the-dashboard&#34;&gt;The Dashboard&lt;/h3&gt;
+&lt;p&gt;You can find the Experience Builder dashboard &lt;a href=&#34;https://uchicago.maps.arcgis.com/home/item.html?id=7878b93f89a64f68b02b680a03d646fa#overview&#34;&gt;here&lt;/a&gt;. It is pretty minimal, but to be perfectly fair, it was all that the task at hand really called for.&lt;/p&gt;</description>
             </item>
         
             <item>
@@ -44,12 +86,23 @@
                 <pubDate>Thu, 10 Jul 2025 00:46:36 -0500</pubDate>
                 <author>Riley</author>
                 <guid>http://localhost:1313/posts/tj_nutrients_post/</guid>
-                <description>&lt;p&gt;My excuse to try out Streamlit before a relevant interview with City of Seattle&amp;rsquo;s OLS (and to minmax my shopping). &lt;a href=&#34;https://github.com/cmoog/traderjoes&#34;&gt;Here&lt;/a&gt; is where I first found out about the TJ&amp;rsquo;s product info API.&lt;/p&gt;
-&lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/tallying-joules&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/tj_calorie_per_dollar.png&#34;
+                <description>&lt;p&gt;Exploring nutrition facts and prices at a certain grocery chain. My excuse to try out Streamlit so I can say that I&amp;rsquo;ve used it (and because it&amp;rsquo;s helpful [and to min-max my grocery shopping]).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: Streamlit, Polars, Vega-Altair, GraphQL&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;the-impetus&#34;&gt;The Impetus&lt;/h3&gt;
+&lt;p&gt;Paul Prudhomme wanted us to know that&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;You don&amp;rsquo;t need a silver fork to eat good food.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;I tend to agree, and in the spirit of &lt;a href=&#34;https://www.historyofinformation.com/detail.php?id=3439&#34;&gt;offloading more cognitive functions to the technology of the day&lt;/a&gt;, I wanted to make a tool to figure out which grocery items nourish well by the dollar. By &amp;ldquo;nourish,&amp;rdquo; I really just mean &amp;ldquo;be high in calories and protein&amp;rdquo; (for my own purposes).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cmoog/traderjoes&#34;&gt;Here&lt;/a&gt; is where I first found out about the TJ&amp;rsquo;s product info API that I used.&lt;/p&gt;
+&lt;h3 id=&#34;the-findings&#34;&gt;The Findings&lt;/h3&gt;
+&lt;p&gt;Some preliminary findings include that, to no surprise, oil-laden foods like cooking oil and peanut butter give you quite a few calories for your dollar. Flour was also up there.&lt;/p&gt;
+&lt;p&gt;Annoyingly, there were many instances of individually wrapped and boxed items (e.g. snack bars) whose data were entered in terms of the full box quantity &lt;em&gt;except&lt;/em&gt; for the price. This made for a bunch of high-value red herrings. I may have to come back to this project with some sort of outlier detection model.&lt;/p&gt;
+&lt;p&gt;I am considering ways to make the Streamlit app quickly accessible and actually useful for a consumer. Something more in the vein of &amp;ldquo;enter a product name, get a Yes/No result on whether it&amp;rsquo;s a value purchase.&amp;rdquo; I would love for my work stay out of the dreaded Data Dashboard Graveyard, where well-intentioned &amp;ldquo;data tools&amp;rdquo; never earn the attention of real-life human beings.&lt;/p&gt;
+&lt;!-- &lt;figure class=&#34;ma0 w-75&#34;&gt;&lt;a href=&#34;https://github.com/hnmns/tallying-joules&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/post_img/tj_calorie_per_dollar.png&#34;
     alt=&#34;TJ nutrient investigation&#34; width=&#34;500&#34;&gt;&lt;/a&gt;
 &lt;/figure&gt;
-
-</description>
+ --&gt;</description>
             </item>
         
     </channel>

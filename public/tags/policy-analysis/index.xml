@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>The Riley Zone</title>
+        <link>http://localhost:1313/tags/policy-analysis/</link>
+        <description>Recent content in Policy Analysis on The Riley Zone</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-gb</language>
+        <managingEditor>Riley</managingEditor>
+        <webMaster>Riley</webMaster>
+        <copyright></copyright>
+        <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/policy-analysis/index.xml" rel="self" type="application/rss+xml" />
+            <item>
+                <title>Great Lakes Governors &amp; Premiers internship</title>
+                <link>http://localhost:1313/posts/gsgp_internship_post/</link>
+                <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+                <author>Riley</author>
+                <guid>http://localhost:1313/posts/gsgp_internship_post/</guid>
+                <description>&lt;p&gt;I interned with the &lt;a href=&#34;https://gsgp.org/&#34;&gt;GSGP&lt;/a&gt; as a geospatial analyst. My task was to find how greenhouse gas (GHG) emissions from maritime transportation were distributed across state and provincial borders. Turns out, Great Lakes maritime transportation accounts for a pretty small fraction of regional GHG emissions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools used&lt;/strong&gt;: QGIS, Excel, ArcGIS Experience Builder&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Check out my full report below for all of the technical details.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-i-learned&#34;&gt;What I learned&lt;/h3&gt;
+&lt;p&gt;This internship was a good exercise in policy writing and seeing a project through from start to finish. I enjoyed the opportunity to present my work to GSGP&amp;rsquo;s Maritime Steering Committee, comprising state and provincial transportation department personnel.&lt;/p&gt;
+&lt;p&gt;As much as I would love to just code all day, those charts and results have to be made communicable to an audience at some point. Apart from maybe researching the different federal and state/provincial GHG reporting standards, the most difficult part of this project was extracting policy recommendations that steer clear of politics, align with GSGP&amp;rsquo;s Regional Maritime Strategy, and are clearly supported by my technical findings. Not only was forming the substance of my argument an exercise, but also the particular register necessary for clear policy writing. It really stuck with me when my supervisor explained the trick of preferring antecedents over pronouns whenever possible. For example, it is preferrable to restate a subject &lt;em&gt;by name&lt;/em&gt; across sentences rather than calling it &amp;ldquo;it,&amp;rdquo; even though that might sound clunky. The intended audience of policy writing probably won&amp;rsquo;t be taking a highlighter to your literary techniques, anyway.&lt;/p&gt;
+&lt;p&gt;My supervisor was very cool and helpful about structuring the internship clearly, outlining it in terms of a few working papers. I wrote the working papers in sequence, each with a thesis that made sense in isolation, but that I would later synthesize into the full white paper. I&amp;rsquo;m always chuffed to see a prodigious (to me) page count on a report after it all comes together. It&amp;rsquo;s amazing how quickly a tall task becomes tractable when you take the time to break it down.&lt;/p&gt;
+&lt;p&gt;Getting to present my findings to real transportation department representatives was pretty neat. I fielded questions afterward and got some practice tailoring my responses in real time, obviously not knowing ahead of time which topics would be most confusing for those unacquainted with the project.&lt;/p&gt;
+&lt;h3 id=&#34;the-report&#34;&gt;The Report&lt;/h3&gt;
+&lt;iframe
+  src=&#34;./GLSLS Maritime Emissions - Final Report.pdf&#34;
+  width=&#34;75%&#34;
+  height=&#34;600px&#34;
+  style=&#34;border: none; margin: auto; display: block;&#34;
+&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;the-dashboard&#34;&gt;The Dashboard&lt;/h3&gt;
+&lt;p&gt;You can find the Experience Builder dashboard &lt;a href=&#34;https://uchicago.maps.arcgis.com/home/item.html?id=7878b93f89a64f68b02b680a03d646fa#overview&#34;&gt;here&lt;/a&gt;. It is pretty minimal, but to be perfectly fair, it was all that the task at hand really called for.&lt;/p&gt;</description>
+            </item>
+        
+    </channel>
+</rss>

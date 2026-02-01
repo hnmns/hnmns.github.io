@@ -10,12 +10,14 @@
         </div> -->
         <h3>Welcome</h3>
         <div style="text-align: center;">
-            <img
-                src="{{ .Site.Params.AuthorImgPath }}" 
-                alt="{{ .Site.Params.Author }}" 
-                class="pure-img"
-                width="100em">
-            </img>
+            <a href="/about">
+                <img
+                    src="{{ .Site.Params.AuthorImgPath }}" 
+                    alt="{{ .Site.Params.Author }}" 
+                    class="pure-img"
+                    width="100em">
+                </img>
+            </a>
             <p><em>{{ .Site.Params.AuthorBlurb }}</em></p>
         </div>
 

@@ -2,23 +2,30 @@
 <html lang="en">
     {{- partial "header.html" . -}}
     <body>
+
+    <!-- Full-width navbar background -->
+    <div id="navbar-wrapper">
         <div class="container">
-
-            {{- partial "menu.html" . -}}
-            
-            <div class="pure-g">
-                {{- block "main" . }}{{- end }}
-
-                {{ if (or (eq .Page.Kind "page") (eq .RelPermalink "/")) }}
-                {{- block "sidebar" . }}
-                    {{- partial "sidebar.html" . -}}
-                {{- end }}
-                {{ end }}
-            </div>
-            
-            {{- partial "footer.html" . -}}
-
+            {{ partial "menu.html" . }}
         </div>
-        {{- partial "custom_footer.html" . -}}
-    </body>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <div class="pure-g">
+            {{ block "main" . }}{{ end }}
+
+            {{ if (or (eq .Page.Kind "page") (eq .RelPermalink "/")) }}
+                {{ block "sidebar" . }}
+                    {{ partial "sidebar.html" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        {{ partial "footer.html" . }}
+    </div>
+
+    {{ partial "custom_footer.html" . }}
+
+</body>
 </html>

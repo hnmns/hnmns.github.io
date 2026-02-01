@@ -10,6 +10,15 @@
 
 {{/* Render content using $page */}}
 {{ with $page }}
+    {{ if not $isMain }}
+        {{ if and (eq .Kind "page") (ne .Section "") }}
+        <nav class="post-back">
+            <a href="{{ .Section | relURL }}" aria-label="Back to {{ .Section }}">
+                ← Back
+            </a>
+        </nav>
+        {{ end }}
+    {{ end }}
     {{ if or (.Date) (ne .Params.Kind "page") }}
     <div class="date">
         <time pubdate="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
@@ -39,23 +48,17 @@
                 </div>
 
                 <div class="article-content">
-
                     <h2>
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
-
                     <div class="tags">
                         {{ range .Params.tags }}
                             <a href="/tags/{{ . | urlize }}" class="pure-button">{{ . }}</a>
                         {{ end }}
                     </div>
-
                     {{ .Summary }}
-
                 </div>
-
             </div>
-
             
             <div style="align-content: end; align-items: end; text-align: right;">
                 <a href="{{ .Permalink }}">Read More</a>
@@ -63,17 +66,40 @@
 
         {{ else }}
 
+            
             {{ if $isMain -}}
                 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             {{ else -}}
+            
                 <h1>{{ .Title }}</h1>
-            {{- end }}
 
-            <div class="tags">
-                {{ range .Params.tags }}
-                    <a href="/tags/{{ . | urlize }}" class="pure-button">{{ . }}</a>
-                {{ end }}
-            </div>
+            {{ with .Params.featured_image }}
+                <div class="article-grid">
+                    <div class="article-image">
+                        <div class="container-hover">
+                            <a href="{{ $.Params.featured_image_link | default $.Title }}">
+                                <img
+                                    src="{{ . }}"
+                                    alt="{{ $.Params.featured_image_alt | default $.Title }}"
+                                    loading="lazy"
+                                >
+                                {{ with $.Params.featured_image_hover }}
+                                <div class="overlay overlay-left">
+                                    <p class="overlay-text">{{ . }}</p>
+                                </div>
+                                {{ end }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+
+                <div class="tags">
+                    {{ range .Params.tags }}
+                        <a href="/tags/{{ . | urlize }}" class="pure-button">{{ . }}</a>
+                    {{ end }}
+                </div>
+            {{- end }}
 
             {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
 
